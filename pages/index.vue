@@ -30,7 +30,19 @@ export default {
 
 <style>
 body{
-  overflow: hidden;
+  background-color: black;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, .1);
+}
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 5px;
+  box-shadow:0 0 0 1px rgba(255, 255, 255, .3);
 }
 @font-face {
   font-family: 'Bold';
@@ -44,12 +56,11 @@ body{
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
-  background-color: black;
   color: white;
   font-family: sans-serif;
-
 }
 .about{
+  position: fixed;
   width:50%;
   padding: 20px;
   font-family: Regular;
@@ -70,6 +81,7 @@ body{
 .lines{
   width: 50%;
   padding: 20px;
+  margin-left:50%;
   font-family: Regular;
 }
 </style>
